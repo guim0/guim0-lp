@@ -1,0 +1,42 @@
+.navbar {
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  list-style: none;
+  > img {
+    width: 50px;
+  }
+  li a {
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 23px;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      -webkit-transform: translate(15%, -50%);
+      transform: translate(15%, -50%);
+      -webkit-transition: 0.1s ease;
+      transition: 0.1s ease;
+      background-color: #ffffff;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:hover::after {
+      width: 80%;
+    }
+  }
+}

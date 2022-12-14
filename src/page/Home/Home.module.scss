@@ -1,0 +1,31 @@
+.home {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  > h1 {
+    margin: 3rem auto;
+  }
+}
+
+section {
+  > p {
+    font-size: 1.2rem;
+  }
+}
+
+.myPhoto {
+  margin: 1rem auto;
+  width: 320px;
+  height: 310px;
+
+  img {
+    border: 3px solid #574ae2;
+    border-radius: 100%;
+    object-fit: cover;
+    image-rendering: optimizeSpeed;
+    width: 100%;
+    height: 100%;
+  }
+}
