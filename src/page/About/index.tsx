@@ -42,6 +42,13 @@ const projects: ICard[] = [
       "<p>Full page with the records from all Rick and Morty Characters, using React-Query to manage data fetching.</p>",
     url: "https://rick-and-morty-react-query-iota.vercel.app/",
   },
+  {
+    name: "CRUD System",
+    logo: "/atom.png",
+    description:
+      "<p>CRUD System, used to study context from react and some implementation for creating and login</p>",
+    url: "https://crud-user-beta.vercel.app/",
+  },
 ];
 export const About = () => {
   return (
