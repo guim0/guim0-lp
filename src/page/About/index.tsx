@@ -46,7 +46,7 @@ const projects: ICard[] = [
     name: "CRUD System",
     logo: "/atom.png",
     description:
-      "<p>CRUD System, used to study context from react and some implementation for creating and login</p>",
+      "<p>CRUD System, used to study context from react and some implementation for creating and login <a href='https://github.com/guim0/crud-user'>check the doc</a></p>",
     url: "https://crud-user-beta.vercel.app/",
   },
 ];
