@@ -49,6 +49,21 @@ const projects: ICard[] = [
       "<p>CRUD System, used to study context from react and some implementation for creating and login. <a href='https://github.com/guim0/crud-user' target='_blank'>Check the doc on Github.</a></p>",
     url: "https://crud-user-beta.vercel.app/",
   },
+
+  {
+    name: "Landing Page",
+    logo: "/atom.png",
+    description:
+      "<p>Created a Landing page for a company called Planejando Stands</p>",
+    url: "https://planejando-stands.com.br",
+  },
+  {
+    name: "Lembrador: Friendly Reminder App, made to People with ADHD",
+    logo: "/atom.png",
+    description:
+      "<p>I created an App in React Native, i was my Fnal paper por college </p>",
+    url: "https://github.com/guim0/lembrador",
+  },
 ];
 export const About = () => {
   return (
