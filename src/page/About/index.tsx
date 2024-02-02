@@ -15,10 +15,16 @@ const works: ICard[] = [
       "<p>NextJS is a great form to put together, performance and Data Fetching</p>  <li>Server-side Rendering</li> <li>Client-side Rendering</li> <li>Dynamic routing</li> ",
   },
   {
-    name: "Testing",
-    logo: "/jest.png",
+    name: "CSS Frameworks and Design Systems",
+    logo: "/code.png",
     description:
-      "<p>Testing components, Unit tests and testing user. </p>  <li>Components Testing</li> <li>Unit functions and hooks</li> <li>Can be used to TDD on frontend</li> ",
+      "<p>It's very commum to used some frameworks to improve development speed</p>  <li>Styled-components</li> <li>TailwindCSS</li> <li>Material UI and more..</li> ",
+  },
+  {
+    name: "Testing: Jest And Cypress",
+    logo: "/testing.svg",
+    description:
+      "<p>Unit testng and E2E. </p>  <li>Components Testing</li> <li>Unit functions and hooks</li> <li>Also mimic user behavior.</li> ",
   },
   {
     name: "React Native - Mobile Development",
@@ -29,33 +35,33 @@ const works: ICard[] = [
 ];
 const projects: ICard[] = [
   {
-    name: "Fipe Research",
-    logo: "/code.png",
+    name: "Check my Github",
+    logo: "/github-mark.svg",
     description:
-      "It's very common when you need to sell your car, to search a base value from 'Fipe' ",
-    url: "https://mobi-auto-woad.vercel.app/search",
+      "Sometimes i forget to update here, so my Github may be more accurate about my experience",
+    url: "https://github.com/guim0",
   },
   {
     name: "Rick and Morty",
     logo: "/rickandmorty.png",
     description:
-      "<p>Full page with the records from all Rick and Morty Characters, using React-Query to manage data fetching.</p>",
-    url: "https://rick-and-morty-react-query-iota.vercel.app/",
+      "<p>This is a personal project, its powered by Rick and Morty API and integrated with React-Query, please take a look</p>",
+    url: "https://rick-morty-encyclopedia.vercel.app/",
   },
   {
     name: "CRUD System",
     logo: "/atom.png",
     description:
-      "<p>CRUD System, used to study context from react and some implementation for creating and login. <a href='https://github.com/guim0/crud-user' target='_blank'>Check the doc on Github.</a></p>",
-    url: "https://crud-user-beta.vercel.app/",
+      "<p>A test with focus on OAuth using Next Auth, it's possible to CREATE / ADD / REMOVE items from cart also, to a company called Mission Brasil. <a href='https://github.com/guim0/mission-challenge?tab=readme-ov-file#mission-brasil-frontend-challenge' target='_blank'>Check the doc on Github.</a></p>",
+    url: "https://mission-challenge-guimo.vercel.app/",
   },
 
   {
     name: "Landing Page",
     logo: "/atom.png",
     description:
-      "<p>Created a Landing page for a company called Planejando Stands</p>",
-    url: "https://planejando-stands.com.br",
+      "<p>Created a Landing page, they need to be pixel perfect, the company called Elite Coders, was a international role</p>",
+    url: "https://elite-coders-test.vercel.app/",
   },
   {
     name: "Lembrador: Friendly Reminder App, made to People with ADHD",
@@ -71,16 +77,16 @@ export const About = () => {
       <h1>About works and projects</h1>
 
       <section>
-        <h3>Some of my skills</h3>
-        <div className={styles.services}>
-          {works.map((items: ICard) => (
-            <Card {...items} />
-          ))}
-        </div>
         <h3>Some projects</h3>
         <div className={styles.services}>
-          {projects.map((items: ICard) => (
-            <Card {...items} />
+          {projects.map((items: ICard, idx: number) => (
+            <Card key={idx} {...items} />
+          ))}
+        </div>
+        <h3>Some of my skills</h3>
+        <div className={styles.services}>
+          {works.map((items: ICard, idx: number) => (
+            <Card key={idx} {...items} />
           ))}
         </div>
       </section>
